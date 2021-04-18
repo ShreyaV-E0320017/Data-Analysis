@@ -1,1 +1,59 @@
-https://drive.google.com/file/d/1hXHB8czEz0XnZwCygr9MdH1auKJydhK6/view?usp=sharing
+#SOURCE CODE
+#TABLE CREATION
+CREATE TABLE blood (Id int, Name varchar constraint donor_name_nn not null, Typeb varchar constraint donor_t_nn not null,
+    Age int constraint donor_a_ck check(Age > 18 and Age < 100),
+    Sex varchar constraint donor_s_ck check(Sex='f'or Sex='m'),
+    Density int constraint donor_D_ck check(Density>0 and Density <= 10),
+    Branch varchar );
+    
+#TABLE INSERTION
+INSERT INTO blood VALUES(1  ,'  Tom     ','A+ ',23,'m',5,'chennai       ');
+INSERT INTO blood VALUES(2  ,'  Lucy    ','B- ',34,'m',6,'vedayapalem   ');
+INSERT INTO blood VALUES(3  ,'  Frank   ','C+ ',56,'f',7,'Savithri nagar');
+INSERT INTO blood VALUES(4  ,'  Jane    ','O- ',23,'f',8,'nellore       ');
+INSERT INTO blood VALUES(5  ,'  Robert  ','O- ',19,'m',6,'araku         ');
+INSERT INTO blood VALUES(6  ,'  Fudge   ','A- ',67,'m',8,'Magunta layout');
+INSERT INTO blood VALUES(7  ,'  Harry   ','A+ ',45,'f',8,'Rithvik       ');
+INSERT INTO blood VALUES(8  ,'  Potter  ','AB+',78,'f',6,'bv nagar      ');
+INSERT INTO blood VALUES(9  ,'  Divya   ','AB-',67,'m',8,'Gandhi nagar  ');
+INSERT INTO blood VALUES(10 ,' Sarvya  ','A- ',89,'f',7,'Sv colony     ');
+INSERT INTO blood VALUES(11 ,' Hari    ','A+ ',34,'f',6,'YSR colony    ');
+INSERT INTO blood VALUES(12 ,' Abhi    ','A- ',56,'m',6,'Mumbai        ');
+INSERT INTO blood VALUES(13 ,' Adhi    ','B- ',89,'m',9,'Guntur        ');
+INSERT INTO blood VALUES(14 ,' Chanthi ','A- ',78,'m',8,'Hyderabad     ');
+INSERT INTO blood VALUES(15 ,' Venu    ','A+ ',45,'m',7,'Secunderabad  ');
+INSERT INTO blood VALUES(16 ,' Nandhini','O+ ',88,'f',8,'Nandhla       ');
+INSERT INTO blood VALUES(17 ,' Priya   ','A- ',78,'m',7,'LB nagar      ');
+INSERT INTO blood VALUES(18 ,' Krishna ','O- ',78,'m',7,'Chennai       ');
+INSERT INTO blood VALUES(19 ,' Vishnu  ','A+ ',23,'m',9,'Vedayapalem   ');
+INSERT INTO blood VALUES(20 ,' Sam     ','A+ ',67,'f',8,'LB nagar      ');
+INSERT INTO blood VALUES(21 ,' Siva    ','A- ',89,'m',8,'nandhayala    ');
+INSERT INTO blood VALUES(22 ,' Sriya   ','O+ ',56,'m',9,'Enclave       ');
+INSERT INTO blood VALUES(23 ,' Ram     ','O+ ',67,'f',8,'Mumbai        ');
+INSERT INTO blood VALUES(24 ,' Meghana ','A+ ',89,'m',9,'Delhi         ');
+INSERT INTO blood VALUES(25 ,' Lahari  ','A- ',98,'f',9,'Leh           ');
+INSERT INTO blood VALUES(26 ,' Charan  ','O+ ',78,'m',4,'Kolkata       ');
+INSERT INTO blood VALUES(27 ,' Bharath ','AB+',45,'m',7,'Gangtok       ');
+INSERT INTO blood VALUES(28 ,' Chithra ','AB-',67,'f',9,'Srinaga       ');
+INSERT INTO blood VALUES(29 ,' Sree    ','o- ',45,'f',9,'Ailabad       ');
+INSERT INTO blood VALUES(30 ,' Ajay    ','O+ ',34,'m',6,'Ahamadabad    ');
+INSERT INTO blood VALUES(31 ,' Vijay   ','b+ ',34,'f',5,'Adilabad      ');
+INSERT INTO blood VALUES(32 ,' Ali     ','A+ ',45,'m',4,'Hyderabad     ');
+INSERT INTO blood VALUES(33 ,' Suma    ','B- ',76,'f',5,'Mysore        ');
+INSERT INTO blood VALUES(34 ,' Kishore ','B- ',34,'m',8,'LB nagar      ');
+INSERT INTO blood VALUES(35 ,' Murali  ','A+ ',67,'m',8,'Rithivik      ');
+INSERT INTO blood VALUES(36 ,' Jeevan  ','AB+',54,'f',4,'Adilabad      ');
+INSERT INTO blood VALUES(37 ,' Dhoni   ','O+ ',78,'m',4,'Pune          ');
+INSERT INTO blood VALUES(38 ,' Virat   ','AB+',23,'m',6,'Dispur        ');
+INSERT INTO blood VALUES(39 ,' Hari    ','o- ',24,'f',5,'Itanagar      ');
+INSERT INTO blood VALUES(40 ,' Ravi    ','O- ',45,'m',9,'Nagpur        ');
+INSERT INTO blood VALUES(41 ,' Pooja   ','AB+',45,'f',7,'Tripura       ');
+INSERT INTO blood VALUES(42 ,' Teja    ','A+ ',31,'m',8,'Gandhi nagar  ');
+INSERT INTO blood VALUES(43 ,' Anand   ','B- ',43,'f',9,'Bengaluru     ');
+INSERT INTO blood VALUES(44 ,' Navi    ','B+ ',34,'m',8,'LR nagar      ');
+INSERT INTO blood VALUES(45 ,' Pravin  ','A+ ',45,'m',6,'AK nagar      ');
+INSERT INTO blood VALUES(46 ,' Shashi  ','A- ',23,'f',5,'Jubliee Hills ');
+INSERT INTO blood VALUES(47 ,' Saleema ','A- ',21,'f',6,'Lecturescolony');
+INSERT INTO blood VALUES(48 ,' Fudge   ','O+ ',34,'m',7,'Gandhi Nagar  ');
+INSERT INTO blood VALUES(49 ,' Shreya  ','AB+',53,'f',6,'Lotous pond   ');
+INSERT INTO blood VALUES(50 ,' Kiran   ','O+ ',34,'m',5,'Thambaram     ');
